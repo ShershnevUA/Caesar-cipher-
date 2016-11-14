@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-header">
+    <div class="container">
+        <h1>
+            <small>Encrypt and decrypt your texts through the</small>
+            Caesar cipher
+        </h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <form class="caesarCipher" method="post">
+            <div class="col-lg-5">
+                <div class="form-group">
+                    <textarea class="form-control text_area" id="text" name="text"
+                              placeholder="Original text"></textarea>
+                </div>
+            </div><!-- /.col-lg-5 -->
+            <div class="col-lg-2 text-center">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="rotate" name="rotate" placeholder="Enter Rotate">
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary" name="decrypt" id="decrypt"><span
+                                class="glyphicon glyphicon-chevron-left"></span></button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary" name="encrypt" id="encrypt"><span
+                                class="glyphicon glyphicon-chevron-right"></span></button>
+                    </div>
+                </div>
+            </div><!-- /.col-lg-2 -->
+            <div class="col-lg-5">
+                <div class="form-group">
+                    <textarea class="form-control text_area" id="return-text" placeholder="Result" readonly></textarea>
+                </div>
+            </div><!-- /.col-lg-5 -->
+        </form>
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <canvas id="income"></canvas>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/chart.js"></script>
+</body>
+</html>
